@@ -14,7 +14,7 @@ const App = () => {
   const [inputValues, setInputValues] = useState<InputValues>({
     title: '',
     description: '',
-    imageUrl: '',
+    imageUrl: '', 
   });
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
