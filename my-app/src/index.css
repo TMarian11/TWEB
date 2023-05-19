@@ -1,100 +1,113 @@
 body {
-  background-color: #333;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
 }
 
-
-
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-  line-height: 1.2;
-  margin: 0 0 30px;
-  color: #333;
-}
-
-/* Stilul container-ului principal */
 .container {
-  background-image: url("https://i.pinimg.com/originals/f2/3c/af/f23caf8a4e123fced0ef9f7d10e13634.png");
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content:flex-start;
-  min-height: 98vh;
-  background-color: #f2f2f2;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image:url("https://avatars.mds.yandex.net/i?id=aef868929c178a31fef40b6e4644bd76d32733a7-9065710-images-thumbs&n=13") ;
 }
 
-/* Stilul formularului */
-.form {
+form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   display: flex;
-  
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 5px;
+  max-width: 500px;
+}
+
+
+label {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+input {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #0077c2;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-image:url("https://i.pinimg.com/236x/95/36/0d/95360d5ea64027617e3cef9d08228dd9.jpg") ;
+}
+
+s
+
+p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+div {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #fff;
-  border-radius: 10px;
-  padding: 40px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px;
-  width: 500px;
 }
-.container1{
-  position: relative;
-  margin: 10% 100px;
+
+div div {
+  height: 100px;
+  width: 100px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.input {
-  margin: 10px 0;
+
+form {
+  margin: auto;
+}
+input[type="password"] {
   padding: 10px;
-  border: none;
   border-radius: 5px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  width: 100%;
+  border: 2px solid #496286;
   font-size: 16px;
+  color: #333;
+  transition: border-color 0.3s ease-in-out;
 }
 
-.button {
-  margin: 20px 0;
-  padding: 12px 30px;
-  border: none;
+input[type="password"]:focus {
+  outline: none;
+  border-color: #0077c2;
+}
+input[type="text"] {
+  padding: 10px;
   border-radius: 5px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  cursor: pointer;
-  transition: all 0.2s ease;
-  background-color: #4CAF50;
-  color: #fff;
+  border: 2px solid #496286;
   font-size: 16px;
+  color: #333;
+  transition: border-color 0.3s ease-in-out;
 }
 
-.button:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  background-color: #3e8e41;
-}
-
-.table,tr,th,td{
-  margin: 20px;
-  border: #f2f2f2 ;
-  background-color: slategray;
-  border-style:solid;
-}
-
-.object {
-  padding: 20px;
-   margin: 10px;
-  background-color: #fff;
-  border-radius: 10px;
-  text-align: center;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
-  grid-column: span 1;
-  font-size: 18px;
-}
-
-/* Stilul grilei */
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-gap: 30px;
+input[type="text"]:focus {
+  outline: none;
+  border-color: #0077c2;
 }
